@@ -97,7 +97,7 @@
 
                <div class="cta-group">
                   <a class="btn" href="#portfolio">View My Work</a>
-                  <a class="btn ghost" href="/assets/jal-gabriel-resume.pdf" download>Download Resume</a>
+                  <a class="btn ghost" href="assets/jal-gabriel-resume.pdf" target="_blank">Download Resume</a>
                </div>
 
                <!-- Quick skills -->
@@ -274,137 +274,63 @@
          </div>
       </section>
 
-      <!-- Resume & Testimonials -->
-      <!-- <section id="resume" style="margin-top:1rem">
-         <h2>Resume</h2>
-         <div class="card two-col">
-               <div>
-                  <h3>Selected Work & Projects</h3>
-                  <ol>
-                     <li>
-                           Landing Website — improved conversion rate by X% (demo link)
-                     </li>
-                     <li>
-                           E-Commerce Website — implemented checkout & inventory flow
-                     </li>
-                     <li>
-                           CRUD Blog App — role-based auth & admin panel
-                     </li>
-                  </ol>
-               </div>
+      <!-- TESTIMONIALS SECTION - To be added in future -->
 
-               <aside class="card">
-                  <h4>Quick Facts</h4>
-                  <p class="muted">Available for remote freelance work. Open to full-time & contract.</p>
-                  <a class="btn" href="/assets/Jal_Gabriel_Resume.pdf" download>Download Full Resume (PDF)</a>
-               </aside>
-         </div>
-      </section> -->
-
-      <!-- TESTIMONIALS -->
-      <!-- <section id="testimonials" style="margin-top:1rem">
-         <h2>Testimonials</h2>
-         <div class="projects">
-               <div class="card">
-                  "Jal turned our idea into a fast, reliable site" — Client A
-               </div>
-               <div class="card">
-                  "Excellent communication and delivered on time" — Client B
-               </div>
-         </div>
-      </section> -->
-
-      <!-- BLOG -->
-      <!-- <section id="blog" style="margin-top:1rem">
-         <h2>Blog</h2>
-         <p class="muted">Short posts & case studies. (Optional — integrate a CMS or static markdown renderer)</p>
-         <div class="projects">
-               <article class="card">
-                  <h4>Case Study: E‑commerce checkout flow</h4>
-                  <p class="muted">Summary of how I structured the checkout flow for conversions.</p>
-               </article>
-               <article class="card">
-                  <h4>Tutorial: Secure user auth with JWT</h4>
-                  <p class="muted">Short walkthrough and sample code.</p>
-               </article>
-         </div>
-      </section> -->
+      <!-- BLOG SECTION - To be added in future -->
 
       <!-- CONTACT -->
       <section id="contact" style="margin-top:1rem">
          <!-- <h2>Contact</h2> -->
          <div class="card two-col">
-               <!-- <div>
-                  <form id="contactForm" action="#" onsubmit="return handleContact(event)" aria-label="Contact form">
-                     <label for="name">Name</label>
-                     <input id="name" name="name" required placeholder="Your name">
+            <!-- Contact Section -->
+            <div id="contact">
+               <h2>Contact Me</h2>
+               <form action="https://formspree.io/f/xeolvjyb" method="POST" id="contact-form">
+                  <!-- Name -->
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" id="name" placeholder="Enter yore name here" required>
 
-                     <label for="email">Email</label>
-                     <input id="email" name="email" type="email" required placeholder="your@domain.com">
+                  <!-- Email -->
+                  <label for="email">Your Email</label>
+                  <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
-                     <label for="message">Message</label>
-                     <textarea id="message" name="message" rows="6" required placeholder="How can I help?"></textarea>
+                  <!-- Message -->
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
 
-                     <div class="actions">
-                           <button class="btn" type="submit">
-                              Send Message
-                           </button>
-                           <a class="btn ghost" href="mailto:email-key">
-                              Email Me
-                           </a>
-                     </div>
-                  </form>
-               </div> -->
+                  <!-- Hidden field for subject -->
+                  <!-- <input type="hidden" name="_subject" value="New Portfolio Contact Request"> -->
 
-               <!-- Contact Section -->
-               <div id="contact">
-                  <h2>Contact Me</h2>
-                  <form action="https://formspree.io/f/xeolvjyb" method="POST" id="contact-form">
-                     <!-- Name -->
-                     <label for="name">Your Name</label>
-                     <input type="text" name="name" id="name" placeholder="Enter yore name here" required>
+                  <!-- Simple honeypot -->
+                  <input type="text" name="_gotcha" style="display: none;" id="">
 
-                     <!-- Email -->
-                     <label for="email">Your Email</label>
-                     <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                  <!-- Submit -->
+                  <button type="submit">Send Message</button>
 
-                     <!-- Message -->
-                     <label for="message">Message</label>
-                     <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                  <!-- Thank You text to sender -->
+                  <!-- <input type="hidden" name="_next" value="https://jalgabriel.github.io/portfolio-website/thankU.html"> -->
+               </form>
+            </div>
 
-                     <!-- Hidden field for subject -->
-                     <!-- <input type="hidden" name="_subject" value="New Portfolio Contact Request"> -->
-
-                     <!-- Simple honeypot -->
-                     <input type="text" name="_gotcha" style="display: none;" id="">
-
-                     <!-- Submit -->
-                     <button type="submit">Send Message</button>
-
-                     <!-- Thank You text to sender -->
-                     <!-- <input type="hidden" name="_next" value="https://jalgabriel.github.io/portfolio-website/thankU.html"> -->
-                  </form>
+            <aside class="card">
+               <h4>Availability</h4>
+               <p class="muted">
+                  Available for remote freelance work, full-time and contract. Typical response within 24–48 hours.
+               </p>
+               <a class="btn" href="assets/jal-gabriel-resume.pdf" target="_blank">Download Resume (PDF)</a>
+               <h4>Follow</h4>
+               <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+                  <a class="icon" href="https://github.com/jalgabriel" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a class="icon" href="https://www.linkedin.com/in/jal-gai-7301b41a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <!-- <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                  </a> -->
                </div>
-
-               <aside class="card">
-                  <h4>Availability</h4>
-                  <p class="muted">
-                     Available for remote freelance work, full-time and contract. Typical response within 24–48 hours.
-                  </p>
-                  <a class="btn" href="/assets/jal-gabriel-resume.pdf" download>Download Full Resume (PDF)</a>
-                  <h4>Follow</h4>
-                  <div style="display:flex;gap:.5rem;flex-wrap:wrap">
-                     <a class="icon" href="https://github.com/jalgabriel" target="_blank" rel="noopener">
-                           <i class="fa-brands fa-github"></i>
-                     </a>
-                     <a class="icon" href="https://www.linkedin.com/in/jal-gai-7301b41a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">
-                           <i class="fa-brands fa-linkedin"></i>
-                     </a>
-                     <!-- <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="icon">
-                           <i class="fab fa-facebook-f"></i>
-                     </a> -->
-                  </div>
-               </aside>
+            </aside>
          </div>
       </section>
    </main>
@@ -416,10 +342,6 @@
          <a href="#privacy">Privacy</a>
       </div>
    </footer>
-   
-
-
-
 
    <!-- Project Detail Modal (single modal used for all projects) -->
    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
