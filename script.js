@@ -1,22 +1,22 @@
 // Small helper: project data (replace with real links & descriptions)
 const PROJECTS = {
    landing: {
-      title: 'Landing Website',
-      desc: 'Conversion-focused landing page with lead capture forms, hero A/B sections, and fast performance. Implemented with responsive design and accessible markup.',
-      live: 'https://live-demo-landing.example',
-      repo: 'https://github.com/yourusername/landing-site'
+      title: 'Fitness Landing Page',
+      desc: 'Simple and effective bodyweight workouts page.',
+      // live: 'https://live-demo-landing.example',
+      repo: 'https://github.com/jalgabriel/full-body-workout.git'
    },
-   ecommerce: {
-      title: 'E-Commerce Website',
-      desc: 'Full shopping experience, product catalog, cart, secure checkout demo (Stripe). Server-side built with Node.js and Express, product data in MongoDB.',
-      live: 'https://live-demo-store.example',
-      repo: 'https://github.com/yourusername/ecommerce-site'
+   restaurant: {
+      title: 'Ramen Restaurant Website',
+      desc: 'Fully responsive, front-end restaurant website designed for a Japanese ramen brand specialising in delivery-only service.',
+      // live: 'https://live-demo-store.example',
+      repo: 'https://jalgabriel.github.io/guaramen/'
    },
-   blogapp: {
-      title: 'CRUD Blog App',
-      desc: 'Content-driven application with JWT auth, role-based permissions, and an admin panel for content management.',
-      live: 'https://live-demo-blog.example',
-      repo: 'https://github.com/yourusername/blog-app'
+   notesapp: {
+      title: 'CRUD Notes App',
+      desc: 'CRUD-MERN notes taking app where users can create, read, update, and delete notes.',
+      // live: 'https://live-demo-blog.example',
+      repo: 'https://github.com/jalgabriel/mern-notes-app.git'
    }
 };
 
@@ -70,7 +70,7 @@ const modal = document.getElementById('projectModal');
 const modalTitle = document.getElementById('modalTitle');
 const modalDesc = document.getElementById('modalDesc');
 const modalContent = document.getElementById('modalContent');
-const liveLink = document.getElementById('liveLink');
+// const liveLink = document.getElementById('liveLink');
 const repoLink = document.getElementById('repoLink');
 
 document.querySelectorAll('[data-open]').forEach(btn => {
@@ -96,12 +96,12 @@ function openProject(id) {
    modalContent.innerHTML = `
       <p class=\"muted\">
          Tech stack: ${
-            id === 'ecommerce' ? 'Node.js, Express, MongoDB, Stripe' : id === 'blogapp' ? 'Express, MongoDB, JWT' : 'HTML, CSS, JS'
+            id === 'restaurant' ? 'JavaScript, HTML, CSS, 3rd Party Services' : id === 'notesapp' ? 'React.js, Node.js, Express, MongoDB' : 'JavaScript, HTML, CSS'
          }
       </p>
    `;
 
-   liveLink.href = p.live;
+   // liveLink.href = p.live;
    repoLink.href = p.repo;
    modal.classList.add('open');
    document.body.style.overflow = 'hidden';
